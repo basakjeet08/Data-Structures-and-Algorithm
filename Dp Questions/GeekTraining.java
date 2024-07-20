@@ -1,6 +1,5 @@
 // https://www.geeksforgeeks.org/problems/geeks-training/1
 
-import java.util.Arrays;
 
 public class GeekTraining {
     public static void main(String[] args) {
@@ -29,7 +28,7 @@ public class GeekTraining {
     }
 
     // Memoization Solution.
-    private static int maximumPointsMemoization(int[][] points, int day, int previousCol, int[][] dp) {
+    public static int maximumPointsMemoization(int[][] points, int day, int previousCol, int[][] dp) {
         if (day < 0)
             return 0;
         if (dp[day][previousCol] != 0)
